@@ -13,7 +13,7 @@ public class anotherClass {
     }
     public void saying(){
     
-        System.out.printf("Your first gf was %s", getName()); //<- put string in args
+        System.out.printf("Your first gf was %s", getName()); //<- %s ask for string in arg get name 
     
     }
     
