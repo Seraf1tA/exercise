@@ -1,6 +1,6 @@
-package cwiczenia;
+package variableExer;
 
-public class Cwiczenia {
+public class VariableExer {
 
     
     public static void main(String[] args) {
