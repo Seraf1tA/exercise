@@ -1,21 +1,22 @@
-package timeclass;
+package publicprivateandthis;
 
 public class SecondClass {
     
     /*
     private can be only use in this class  
+    by default it will use those private int
+    unless use this referance
     */
     
     private int hour;
     private int minute;
     private int second;
     
-    public void setTime(int h,int m, int s){
+    public void setTime(int hour,int minute, int second){
         
-        hour = ((h>=0 && h<24) ? h : 0); // if hour is more then 0 and less then 
-                                         // 24 then is number if not then use default
-        minute = ((m>=0 && m<60) ? m : 0);
-        second = ((s>=0 && s<60) ? s : 0);
+        this.hour = 4;
+        this.minute = 5;
+        this.second = 6;
         
     }
     public String toMilitary(){
@@ -25,9 +26,9 @@ public class SecondClass {
     }
     
     public String toString(){
-    //                          format                  
+                  
         return String.format("%d:%02d:%02d %s", ((hour==0||hour==12)?12:hour%12), minute, second, (hour < 12? "AM" : "PM"));
-    // if h is exacly 0 or 12  then 12 if not then divade by 12
+
     }
     
 }
