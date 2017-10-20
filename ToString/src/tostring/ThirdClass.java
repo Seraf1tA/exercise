@@ -14,6 +14,7 @@ public class ThirdClass {
         
         System.out.printf("The constructor for this is %s\n", this);
         
+        
     }
     
     public String toString(){ // have to be named toString so "this" reference can find it
