@@ -17,6 +17,7 @@ public class Enumeration {
         
             System.out.println("\nAnd now range of constance!!!!!!!!!!!\n");
             
+            // enum set range allow to shorten range of arrey what is print out
             
             for(SecondClass fruits: EnumSet.range(SecondClass.strawbery, SecondClass.mandarine))
                 System.out.printf("%s\t%s\t%s\n", fruits, fruits.getDesc(), fruits.getYear());
