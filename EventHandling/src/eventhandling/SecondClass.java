@@ -40,7 +40,7 @@ public class SecondClass extends JFrame {
     
     private class thehandler implements ActionListener{ // this class take only one method 
         
-        public void actionPerformed(ActiveEvent event){
+        public void actionPerformed(ActionEvent event){
         
             String string = "";
             
