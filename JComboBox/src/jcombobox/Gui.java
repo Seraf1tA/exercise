@@ -18,8 +18,19 @@ public class Gui extends JFrame{
         super("the title");
         setLayout(new FlowLayout());
         
-        box = new JComboBox(filename);
-        
+        box = new JComboBox(filename); //default names in scrol box
+        box.addItemListener(
+                new ItemListener() { // inner handler class in item listener class
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==ItemEvent.SELECTED) 
+                    picture.setIcon(pics[box.getSelectedIndex()]);
+            }
+        }
+        );
+        add(box);
+        picture = new JLabel(pics[0]); // setting default picture
+        add(picture);
         
     
     }
