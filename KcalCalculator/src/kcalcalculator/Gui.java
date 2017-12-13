@@ -1,5 +1,9 @@
 package kcalcalculator;
 
+/*
+test before using JFrame for gui
+*/
+
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
